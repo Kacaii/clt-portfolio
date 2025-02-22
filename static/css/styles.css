@@ -84,6 +84,7 @@ body {
     border-radius: 50%;
     display: inline;
     width: 100%;
+    max-width: 360px;
   }
 
   .button {
@@ -104,5 +105,26 @@ body {
     &:hover {
       transform: scale(1.1);
     }
+  }
+}
+
+.bio-wrapper {
+  --default-border-radius: 1rem;
+
+  background-color: var(--primary-color);
+  padding: 1rem;
+  color: var(--text-color-primary);
+
+  border-radius: var(--default-border-radius);
+
+  h1 {
+    font-size: 1.5rem;
+    padding-bottom: 1rem;
+  }
+
+  li {
+    display: flex;
+    gap: 1rem;
+    padding: 0.25rem 0;
   }
 }

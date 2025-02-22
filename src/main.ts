@@ -9,6 +9,6 @@ app.use("/static/*", serveStatic({ root: "./" }));
 app.get("/", serveStatic({ path: "./static/index.html" }));
 
 // POST Requests
-app.post("/main", (c) => c.text("swapped!"));
+app.post("/main-page", serveStatic({ path: "./static/main.html" }));
 
 Deno.serve({ port: 3000, hostname: "localhost" }, app.fetch);
