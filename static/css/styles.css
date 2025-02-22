@@ -18,31 +18,35 @@
 }
 
 body {
+  height: 80dvh;
   font-family: Roboto;
-  padding: 2rem;
+  padding: 1rem;
   background-color: var(--secondary-color);
 }
 
 #shell {
-  padding: 4rem;
+  padding: 1rem;
   border: 0.25rem solid var(--primary-color);
-  border-radius: 2rem 2rem 0rem 0rem;
+  border-radius: 2rem;
+  height: 100%;
+  margin: 1rem 0;
 }
 
 .navbar {
-  padding: 0.5rem 0rem;
+  padding: 0.3rem 0rem;
   width: 100%;
   background-color: var(--primary-color);
   color: var(--text-color-primary);
   display: flex;
   align-items: center;
   justify-content: space-between;
+  border-radius: 1rem;
 
   .main {
     display: flex;
-    gap: 1rem;
+    gap: 0.5rem;
     padding: 1rem;
-    font-size: 2rem;
+    font-size: 1.2rem;
     place-content: center;
   }
 
@@ -55,9 +59,9 @@ body {
 
   .button_icon {
     border: 0.2rem solid var(--text-color-secondary);
-    padding: 0.5rem;
+    padding: 0.4rem;
     border-radius: 1rem;
-    font-size: 3rem;
+    font-size: 2rem;
     height: 2rem;
   }
 }
@@ -77,16 +81,20 @@ body {
     border: 0.5rem solid var(--primary-color);
     border-radius: 50%;
     display: inline;
-    width: 25rem;
+    width: 100%;
   }
 
   .button {
     border: none;
     border-radius: 1rem;
 
+    display: flex;
+    gap: 0.2rem;
+    place-content: center;
+
     padding: 1rem;
     background-color: var(--primary-color);
-    font-size: 2rem;
+    font-size: 1.5rem;
     color: var(--text-color-primary);
 
     width: 12rem;
