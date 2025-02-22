@@ -12,9 +12,10 @@
       crossorigin="anonymous"
     ></script>
   </head>
+
   <body>
-    <!-- It wraps around the main content -->
     <main id="shell">
+      <!-- This will be swapped -->
       <section class="landing-page">
         <img
           src="/static/assets/img/pfp.jpg"
@@ -27,19 +28,18 @@
           hx-swap="innerHTML"
           class="button"
         >
-          <i class="nf nf-md-gesture_tap"></i><b>Tap me!</b>
+          <i class="nf nf-md-gesture_tap"></i>Tap me!
         </button>
       </section>
+      <!-- end -->
     </main>
 
     <nav class="navbar">
       <div class="main">
         <i class="nf nf-dev-terminal"></i>
-        <p class="main-name">Pedro Ayres</p>
+        <p class="main-name"><b>Pedro Ayres</b></p>
       </div>
-
       <ul class="button_list">
-        <li><i class="nf nf-fa-moon button_icon"></i></li>
         <li><i class="nf nf-dev-github button_icon"></i></li>
         <li><i class="nf nf-md-menu button_icon"></i></li>
       </ul>
