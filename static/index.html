@@ -13,6 +13,7 @@
     ></script>
   </head>
   <body>
+    <!-- It wraps around the main content -->
     <main id="shell">
       <section class="landing-page">
         <img
@@ -20,16 +21,28 @@
           class="profile-picture"
           alt="A picture of me"
         />
-        <button class="landing-page__button">
+        <button
+          hx-post="/main"
+          hx-target="#shell"
+          hx-swap="innerHTML"
+          class="button"
+        >
           <i class="nf nf-md-gesture_tap"></i> Tap me!
         </button>
       </section>
-      <nav>
-        <ul>
-          <li><i class="nf nf-fa-moon"></i></li>
-          <li><i class="nf nf-dev-github"></i></li>
-        </ul>
-      </nav>
     </main>
+
+    <nav class="navbar">
+      <div class="main">
+        <i class="nf nf-dev-terminal"></i>
+        <p class="main-name">Pedro Ayres</p>
+      </div>
+
+      <ul class="button_list">
+        <li><i class="nf nf-fa-moon button_icon"></i></li>
+        <li><i class="nf nf-dev-github button_icon"></i></li>
+        <li><i class="nf nf-md-menu button_icon"></i></li>
+      </ul>
+    </nav>
   </body>
 </html>

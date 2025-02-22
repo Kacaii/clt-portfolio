@@ -1,7 +1,7 @@
 @import "https://www.nerdfonts.com/assets/css/webfont.css";
 
 :root {
-  /* Tokens */
+  /*Primitives*/
   --beige: #f6f3ee;
   --cream: #dbcfbd;
   --coffee: #ad9285;
@@ -10,12 +10,15 @@
   --green: #415858;
   --green-dark: #2c3639;
 
+  /* Tokens */
   --primary-color: var(--beige);
   --secondary-color: var(--cream);
-  --text-color: var(--coffee);
+  --text-color-primary: var(--coffee-dark);
+  --text-color-secondary: var(--coffee);
 }
 
 body {
+  font-family: Roboto;
   padding: 2rem;
   background-color: var(--secondary-color);
 }
@@ -23,7 +26,40 @@ body {
 #shell {
   padding: 4rem;
   border: 0.25rem solid var(--primary-color);
-  border-radius: 2rem;
+  border-radius: 2rem 2rem 0rem 0rem;
+}
+
+.navbar {
+  padding: 0.5rem 0rem;
+  width: 100%;
+  background-color: var(--primary-color);
+  color: var(--text-color-primary);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  .main {
+    display: flex;
+    gap: 1rem;
+    padding: 1rem;
+    font-size: 2rem;
+    place-content: center;
+  }
+
+  .button_list {
+    display: flex;
+    gap: 0.5rem;
+
+    padding: 1rem;
+  }
+
+  .button_icon {
+    border: 0.2rem solid var(--text-color-secondary);
+    padding: 0.5rem;
+    border-radius: 1rem;
+    font-size: 3rem;
+    height: 2rem;
+  }
 }
 
 .landing-page {
@@ -44,17 +80,16 @@ body {
     width: 25rem;
   }
 
-  .landing-page__button {
+  .button {
     border: none;
     border-radius: 1rem;
 
     padding: 1rem;
     background-color: var(--primary-color);
     font-size: 2rem;
-    color: var(--text-color);
+    color: var(--text-color-primary);
 
     width: 12rem;
-
     transition: width 100ms ease-in-out;
 
     &:hover {
