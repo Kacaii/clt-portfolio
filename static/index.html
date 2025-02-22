@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Pedro Ayres</title>
+    <link href="/static/css/reset.css" rel="stylesheet" />
     <link href="/static/css/styles.css" rel="stylesheet" />
     <script
       src="https://unpkg.com/htmx.org@2.0.4"
@@ -11,5 +12,24 @@
       crossorigin="anonymous"
     ></script>
   </head>
-  <body></body>
+  <body>
+    <main id="shell">
+      <section class="landing-page">
+        <img
+          src="/static/assets/img/pfp.jpg"
+          class="profile-picture"
+          alt="A picture of me"
+        />
+        <button class="landing-page__tapme">
+          <i class="nf nf-md-gesture_tap"></i> Tap me!
+        </button>
+      </section>
+      <nav>
+        <ul>
+          <li><i class="nf nf-fa-moon"></i></li>
+          <li><i class="nf nf-dev-github"></i></li>
+        </ul>
+      </nav>
+    </main>
+  </body>
 </html>
