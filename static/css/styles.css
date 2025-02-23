@@ -94,6 +94,11 @@ body {
     display: inline;
     width: 100%;
     max-width: 360px;
+
+    &:hover {
+      box-shadow: 0 10px 1rem var(--primary-color);
+      transition: box-shadow 200ms ease-in-out;
+    }
   }
 
   .button {
@@ -112,7 +117,7 @@ body {
     transition: transform 100ms ease-in-out;
 
     &:hover {
-      transform: scale(1.1);
+      transform: translateY(-5px);
     }
   }
 }
