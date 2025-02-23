@@ -178,6 +178,10 @@ body {
         }
       }
 
+      hr {
+        border: 1px solid var(--text-color-secondary);
+      }
+
       li {
         padding: 0.25rem;
 
@@ -188,8 +192,15 @@ body {
     }
 
     .icons {
+      max-width: calc(50% - 2rem);
+      place-content: center;
+      gap: 0.5rem;
+      display: flex;
+      flex-wrap: wrap;
+      font-size: 3rem;
+      color: var(--text-color-primary);
       border: 0.25rem solid var(--primary-color);
-      padding: 1rem;
+      padding: 0.5rem;
       border-radius: var(--default-border-radius);
     }
   }
