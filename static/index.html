@@ -1,43 +1,54 @@
-<section class="main-page">
-  <div class="bio">
-    <h1><b>Bio</b></h1>
-    <ul>
-      <li>
-        <h2><b>2002</b></h2>
-        Born in Pernambuco, Brasil.
-      </li>
-      <li>
-        <h2><b>2023</b></h2>
-        Started learning about web development at Alura.
-      </li>
-      <li>
-        <h2><b>2024</b></h2>
-        Joined SENAC - PE to study System Analysis and Development.
-      </li>
-    </ul>
-    <img class="dinossaur" src="/static/assets/google-dinossaur.svg" alt="" />
-  </div>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Pedro Ayres</title>
+    <link href="/static/css/reset.css" rel="stylesheet" />
+    <link href="/static/css/styles.css" rel="stylesheet" />
+    <script
+      src="https://unpkg.com/htmx.org@2.0.4"
+      integrity="sha384-HGfztofotfshcF7+8n44JQL2oJmowVChPTg48S+jvZoztPfvwD79OC/LTtG6dMp+"
+      crossorigin="anonymous"
+    ></script>
+  </head>
 
-  <div class="double">
-    <div class="skills">
-      <h3>Skills</h3>
-      <ul>
-        <li>Typescript</li>
-        <li>Golang</li>
-        <li>Git</li>
-        <hr />
-        <li>Constant Learner</li>
-        <li>Cooperative</li>
+  <body>
+    <main id="shell">
+      <!-- - -->
+      <!-- This will be swapped -->
+      <section class="landing-page">
+        <img
+          src="/static/assets/img/pfp.jpg"
+          class="profile-picture"
+          alt="A picture of me"
+        />
+        <button
+          hx-post="/portfolio"
+          hx-target="#shell"
+          hx-swap="innerHTML"
+          class="button"
+        >
+          <i class="nf nf-md-gesture_tap"></i>Tap me!
+        </button>
+      </section>
+      <!-- end -->
+      <!-- - -->
+    </main>
+
+    <nav class="navbar">
+      <div class="main">
+        <i class="nf nf-dev-terminal"></i>
+        <p class="main-text"><b>Pedro Ayres</b></p>
+      </div>
+      <ul class="button_list">
+        <li>
+          <a href="https://github.com/kacaii"
+            ><i class="nf nf-dev-github button_icon"></i
+          ></a>
+        </li>
+        <li><i class="nf nf-md-menu button_icon"></i></li>
       </ul>
-    </div>
-
-    <div class="icons">
-      <i class="nf nf-seti-zig"></i>
-      <i class="nf nf-custom-neovim"></i>
-      <i class="nf nf-dev-typescript"></i>
-      <i class="nf nf-dev-git"></i>
-      <i class="nf nf-cod-terminal_linux"></i>
-      <i class="nf nf-md-language_go"></i>
-    </div>
-  </div>
-</section>
+    </nav>
+  </body>
+</html>
