@@ -166,7 +166,8 @@ body {
   }
 
   .double {
-    display: flex;
+    display: grid;
+    grid-template-columns: 48% 48%;
     gap: 1rem;
 
     .skills {
@@ -199,16 +200,17 @@ body {
     }
 
     .icons {
-      max-width: calc(50% - 2rem);
       place-content: center;
-      gap: 0.5rem;
-      display: flex;
-      flex-wrap: wrap;
+      gap: 0.25rem;
+      display: grid;
+      justify-items: center;
+      grid-template-columns: 50% 50%;
       font-size: 3rem;
       color: var(--text-color-primary);
       border: 0.25rem solid var(--primary-color);
       padding: 0.5rem;
       border-radius: var(--default-border-radius);
+      place-content: center;
     }
   }
 
