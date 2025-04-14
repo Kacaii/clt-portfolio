@@ -1,10 +1,12 @@
 # Dev Portfolio
 
-Para iniciar o projeto no Windows:
+1. Inicie o servidor local com:
 
 ```bash
 $ ./bin/start.exe
 ```
+
+2. Depois é só acessar a página em: `http://localhost:3000/`
 
 ## Tecnologias Utilizadas
 
