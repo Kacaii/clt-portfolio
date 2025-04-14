@@ -3,7 +3,8 @@
     "hono": "jsr:@hono/hono@^4.7.2"
   },
   "tasks": {
-    "start": "deno run --watch --allow-net --allow-read src/main.ts"
+    "start": "deno run --watch --allow-net --allow-read src/main.ts",
+    "compile_windows": "deno compile --allow-all --target x86_64-pc-windows-msvc --output bin/start src/main.ts"
   },
   "compilerOptions": {
     "jsx": "precompile",
