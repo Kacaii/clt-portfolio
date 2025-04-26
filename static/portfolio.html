@@ -60,20 +60,47 @@
 
   <div class="form">
     <form>
-      <label for="fname">Nome</label><br />
-      <input
-        type="text"
-        name="fname"
-        id="fname"
-        placeholder="Prazer em te conhecer!"
-      /><br />
-      <label for="falbum">Álbum Favorito</label><br />
-      <input
-        type="text"
-        name="falbum"
-        id="falbum"
-        placeholder="Ótima escolha"
-      />
+      <fieldset>
+        <label for="fname">Nome e Sobrenome:</label><br />
+        <input
+          type="text"
+          name="fname"
+          id="fname"
+          placeholder="Prazer em te conhecer!"
+        /><br />
+
+        <label for="fphone">Telefone:</label><br />
+        <input type="tel" name="fphone" id="fphone" placeholder="" /><br />
+
+        <label for="femail">E-mail:</label><br />
+        <input
+          type="email"
+          name="femail"
+          id="femail"
+          placeholder="example@email.com"
+        /><br />
+
+        <label for="fmessage">Mensagem Personalizada:</label><br />
+        <input
+          type="text"
+          name="fmessage"
+          id="fmessage"
+          placeholder="Vamos conversar <3"
+        /><br />
+
+        <label for="fmessage">Arquivo Personalizado:</label><br />
+        <input type="file" name="ffile" id="ffile" /><br />
+
+        <h2>Linguagens Preferidas:</h2>
+        <label for="fts">Typescript</label>
+        <input class="checkbox" type="checkbox" name="fts" id="fts" />
+        <label for="fgo">Golang</label>
+        <input class="checkbox" type="checkbox" name="fgo" id="fgo" />
+        <label for="fzig">Zig</label>
+        <input class="checkbox" type="checkbox" name="fzig" id="fzig" />
+
+        <h2>Bando de dados Preferido:</h2>
+      </fieldset>
     </form>
   </div>
 </section>
