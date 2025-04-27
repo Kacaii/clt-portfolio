@@ -62,12 +62,7 @@
     <form>
       <fieldset>
         <label for="fname">Nome e Sobrenome:</label><br />
-        <input
-          type="text"
-          name="fname"
-          id="fname"
-          placeholder="Prazer em te conhecer!"
-        /><br />
+        <input type="text" name="fname" id="fname" placeholder="" /><br />
 
         <label for="fphone">Telefone:</label><br />
         <input type="tel" name="fphone" id="fphone" placeholder="" /><br />
@@ -81,15 +76,12 @@
         /><br />
 
         <label for="fmessage">Mensagem Personalizada:</label><br />
-        <input
-          type="text"
-          name="fmessage"
-          id="fmessage"
-          placeholder="Vamos conversar <3"
-        /><br />
+        <input type="text" name="fmessage" id="fmessage" placeholder="" /><br />
 
         <label for="fmessage">Arquivo Personalizado:</label><br />
         <input type="file" name="ffile" id="ffile" /><br />
+
+        <hr />
 
         <h2>Linguagens Preferidas:</h2>
         <label for="fts">Typescript</label>
@@ -100,6 +92,30 @@
         <input class="checkbox" type="checkbox" name="fzig" id="fzig" />
 
         <h2>Bando de dados Preferido:</h2>
+        <label for="fsqlite">Sqlite</label>
+        <input type="radio" name="fsqlite" id="fsqlite" />
+        <label for="fmysql">MySQL</label>
+        <input type="radio" name="fmysql" id="fmysql" /><br />
+
+        <hr />
+
+        <label for="fturno">Turno preferido para reuniões:</label><br />
+        <select name="fturno" id="fturno">
+          <option value="manha">Manhã</option>
+          <option value="tarde">Tarde</option>
+          <option value="noite">Noite</option></select
+        ><br />
+
+        <label for="ftime">Horário preferido para reuniões</label>
+        <input type="time" name="ftime" />
+
+        <label for="fdata">Previsão de Entrega</label>
+        <input type="date" name="fdate" />
+
+        <hr />
+
+        <input type="reset" name="freset" value="Reset" />
+        <input type="submit" name="fsubmit" value="Submit" />
       </fieldset>
     </form>
   </div>
